@@ -1,25 +1,25 @@
-html {
-  font-family: "Helvetica Neue", sans-serif;
-  width: 100%;
-  color: #363636;
-  text-align: center;
+.card-link:hover {
+  box-shadow: 20px 20px 80px -44px #000;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .popup-overlay {
   /*Hides pop-up when there is no "active" class*/
   visibility: hidden;
   position: absolute;
-  background: #ffffff;
-  border: 3px solid #666666;
-  width: 80%;
-  height: 80%;
-  left: 25%;
+  background: #b0c0b3;
+  border: 8px solid #666666;
+  margin: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup-overlay.active {
   /*displays pop-up when "active" class is present*/
+  z-index: 999;
   visibility: visible;
-  text-align: center;
 }
 
 .popup-content {
@@ -36,7 +36,7 @@ button {
   display: inline-block;
   vertical-align: middle;
   border-radius: 30px;
-  margin: .20rem;
+  margin: 0.2rem;
   font-size: 1rem;
   color: #666666;
   background: #ffffff;
@@ -49,8 +49,9 @@ button:hover {
   color: #ffffff;
 }
 
-#close{
-    display: flex;
-    color:black;
-    align-items: center;
+.close {
+  display: flex;
+  color: black;
+  align-items: center;
+  float: right !important;
 }

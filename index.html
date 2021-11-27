@@ -13,10 +13,10 @@
 
   <script data-main = "config" src = "vendor/require.js"></script>
 
+  <!--bootstrap link-->
   <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   
-  <!-- Latest compiled JavaScript -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
@@ -25,19 +25,20 @@
 <body>
 
       <div class="container mt-5">
-        <h1 class="text-center font-weight-light">Spotify Playlist</h1>
+        <h1 class="text-center font-weight-normal mt-5">Spotify Category</h1>
       </div>
 
+      <!--Create category cards-->
+      <div class="row category-row"></div>    
+       
+      <!--Create the popup content-->
       <div class="container">
-        <!--Create the popup content-->
         <div class="popup-overlay">
           <div class="wrapper">
             <div class="popup-content"></div>
           </div>
         </div>
       </div>
-      <!--Create category cards-->
-      <div class="row" id="category-row"></div>    
-        
+       
 </body>
 </html>

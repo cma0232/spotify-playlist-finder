@@ -1,4 +1,3 @@
-
 .category-row {
   padding: 9em;
 }
@@ -20,7 +19,6 @@
   position: fixed;
   color: wheat;
   background: rgba(0, 0, 0, 0.9);
-  /* border: 8px solid #666666; */
   display: flex;
   padding: 5em;
   justify-content: center;
@@ -58,14 +56,9 @@
 }
 
 button {
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 30px;
-  margin: 0.2rem;
-  font-size: 1rem;
   color: #666666;
   background: #ffffff;
-  border: 1px solid #666666;
+  border: 2.5px solid #666666;
 }
 
 button:hover {
@@ -75,17 +68,14 @@ button:hover {
 }
 
 .close {
-  display: flex;
   color: white !important;
-  align-items: center;
   float: right !important;
-  position: absolute;
   right: 2em;
   top: 2em;
   left: unset;
 }
 
-.wrapper {
+.popup-wrapper {
   padding: 5em;
   height: 100%;
   overflow: scroll;
